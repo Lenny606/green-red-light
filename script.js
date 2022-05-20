@@ -1,58 +1,58 @@
+//mornings exercise commented out---------------------------
+
+// const oneData = {
+//     name: "XXXX",
+//     state: "FFFFF",
+//     insideArray: [
+//         1, 2, 3, 4, 5
+//     ],
+//     insideObject: {
+//         city: "ppppp",
+//         post: "jjjj"
+//     }
+// }
+
+// oneData.name = "KKK";
+// oneData["state"] = "fffff";
+
+// oneData.insideArray[1] = 55;
+
+// console.log(oneData);
 
 
-const oneData = {
-    name: "XXXX",
-    state: "FFFFF",
-    insideArray: [
-        1, 2, 3, 4, 5
-    ],
-    insideObject: {
-        city: "ppppp",
-        post: "jjjj"
-    }
-}
-
-oneData.name = "KKK";
-oneData["state"] = "fffff";
-
-oneData.insideArray[1] = 55;
-
-console.log(oneData);
-
-
-// LOOP
+// LOOP + JSON -----------------------------------
 // Object.values(oneData.insideObject).forEach((key) => {
 //     console.log(oneData.insideObject[key]);
 // });
 
-for (let key in oneData.insideArray) {
-    console.log(key);
-}
+// for (let key in oneData.insideArray) {
+//     console.log(key);
+// }
 
-for (let value in oneData.insideObject) {
-    console.log(value);
-}
+// for (let value in oneData.insideObject) {
+//     console.log(value);
+// }
 
-const firstLevel = (JSON.stringify(oneData)); //JSON.parse converts to object
-const secondLevel = (JSON.stringify(firstLevel));
-const thirdLevel = (JSON.stringify(secondLevel + "fffffff"));
-console.log(oneData);
-console.log(firstLevel);
-console.log(secondLevel);
-console.log(thirdLevel);
+// const firstLevel = (JSON.stringify(oneData)); //JSON.parse converts to object
+// const secondLevel = (JSON.stringify(firstLevel));
+// const thirdLevel = (JSON.stringify(secondLevel + "fffffff"));
+// console.log(oneData);
+// console.log(firstLevel);
+// console.log(secondLevel);
+// console.log(thirdLevel);
 
-const field = document.querySelector(".input");
-const button = document.querySelector(".btn");
+// const field = document.querySelector(".input");
+// const button = document.querySelector(".btn");
 
-const handleClick = (e) => {
-    console.log(e.code)
-    button.style.backgroundColor = "red";
-    // document.querySelector("body").innerHTML += "<p>sdfbkbk</p>";
-};
+// const handleClick = (e) => {
+//     console.log(e.code)
+//     button.style.backgroundColor = "red";
+//     // document.querySelector("body").innerHTML += "<p>sdfbkbk</p>";
+// };
 
-field.addEventListener("keydown", handleClick);
+// field.addEventListener("keydown", handleClick);
 
-// ------------Crosswalk lights (stage 1)  
+// ------------Crosswalk lights (stage 1) ------------
 // 1. create elements
 //2. add event on the button
 //3. implement change of the images
